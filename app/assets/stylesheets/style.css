@@ -1,0 +1,305 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100vh;
+  background-image: url("nougyou.jpg");
+}
+
+h1,h2,h3,h4,h5,h6,body{
+  letter-spacing: 0.3em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.post {
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 5px #fff;
+}
+
+.post:active{
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.header {
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #57C3E9;
+  background-color: olive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 62px;
+}
+
+.header-left{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-logo{
+  font-weight: bold;
+  line-height: 41px;
+}
+
+.header-right{
+  /* position: relative; */
+}
+
+body{
+  padding-top: 60px;
+}
+
+footer {
+  margin: 30px auto;
+  padding: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a{
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.row1{
+  overflow: scroll;
+}
+
+.row{
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+}
+
+.nickname{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.content-post{
+  background-size: cover;
+  margin: 30px 0;
+  padding: 30px;
+  height: 400px;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.container{
+  background-color: white;
+  margin: 165px 0;
+  padding: 30px;
+}
+
+.container h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container-title{
+  font-size: 25px;
+  font-weight: bold;
+  color: olive;
+  text-align: center;
+}
+
+form input,form textarea{
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.submit-btn{
+  cursor: pointer;
+  background-color: olive;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 5px lightgray;
+  
+}
+
+.success{
+  height: 100px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.success h3{
+  font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.submit-btn:active{
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.drop-btn{
+  width: 18px;
+  height: 18px;
+}
+
+.drop{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+  height: 100px;
+  width: 80px;
+}
+
+.drop-list{
+  list-style: none;
+  width: 90px;
+  background-color: olive;
+  display: none;
+  border: 1px solid #ddd;
+  position: absolute;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  text-align: center;
+}
+
+.drop-span{
+  display: block;
+  width: 20px;
+  cursor: pointer;
+}
+
+.drop-span:hover .drop-list{
+  display: block;
+}
+
+.drop-list a{
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.drop-list{
+  border-top: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.drop-list li:hover{
+  background-color: lightskyblue;
+}
+
+.submit-tanu{
+  height: 100px;
+  width: 100%;
+  background-color: olive;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  /* box-shadow:0 5px lightgray; */
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  cursor: pointer;
+  height: 80px;
+  width: 100%;
+  background-color: olive;
+  padding: 6px 20px;
+  font-size: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 8px lightgray;
+}
+
+form input[type="submit"]:active {
+  box-shadow: none;
+  position: relative;
+  top: 8px;
+}
+
+.user-name{
+  position: absolute;
+  left: 700px;
+  top: 5px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+.user-info{
+  display: none;
+  list-style: none;
+
+}
+
+.user-name:hover .user-info{
+  display: block;
+}
+
+.info-list{
+  margin-top: 10px;
+  border-bottom: 1px solid #fff;
+  background-color: olive;
+}
+
+.info-list a {
+  font-size: 16px;
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}

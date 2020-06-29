@@ -1,0 +1,28 @@
+<div class="contents row">
+  <div class="container">
+<h2>ログイン</h2>
+
+<%= form_with model: @user, url: user_session_path, class: 'login-user', local: true do |f| %>
+  <div class="submit-tanu">
+    <%= f.label :Eメールアドレスを入力する %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="submit-tanu">
+    <%= f.label :パスワードを入力する %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <%# <% if devise_mapping.rememberable? %>
+    <%# <div class="field">
+      <%= f.check_box :remember_me %>
+      <%# <%= f.label :remember_me %>
+    <%# </div> %>
+  <%# <% end %> 
+
+  <div class="actions">
+    <%= f.submit "ログインボタン" %>
+  </div>
+<% end %>
+</div>
+</div>
