@@ -16,14 +16,14 @@
         <% if user_signed_in? %>
           <div class="header-right">
             <div class="user-name">
-            <span><%= current_user.nickname %>
+            <span><%= current_user.nickname %></span>
               <ul class="user-info">
                 <li class="info-list">
                   <%= link_to "マイページ", "/users/#{current_user.id}" %>
                   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
                 </li>
               </ul>
-            </span>
+            
             </div>
             <%= link_to "投稿する", new_tweet_path, class: "post" %>
           </div>

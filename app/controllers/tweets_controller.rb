@@ -28,6 +28,8 @@ before_action :move_to_index, except: [:index, :show]
   end
 
   def show
+    @comment = Comment.new
+    @comments = @tweet.comments.includes(:user)
   end
 
 
