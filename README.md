@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 # アプリ名
-- Farmers-market
+Farmers-market
 
 # 概要
 - ユーザー登録ができます。
@@ -37,10 +37,16 @@ Things you may want to cover:
 私の両親は農業をしており、育てた農作物は地元のお客様からご愛顧いただき、たくさんのお言葉を頂いております。その中でも多くのお言葉として頂くのが次はいつ収穫されますかというご質問です。そこで私は農家の方が気軽に投稿できるアプリを開発しようと考えました。投稿内容にコメントができるようにすることで、今まで農家の方に直接お聞きしていたのが簡単にご質問が可能になります。これによりお互いのコミュニケーションも取りやすくなり、お客様もお買い物がしやすくなると考えたことが制作背景です。
 
 # DEMO
-- [![Image from Gyazo](https://i.gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c.jpg)](https://gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c)
+- トップページ
+[![Image from Gyazo](https://i.gyazo.com/2b279d64a35ba3c59c2152a3a1bbee89.jpg)](https://gyazo.com/2b279d64a35ba3c59c2152a3a1bbee89)
+- 投稿機能
+[![Image from Gyazo](https://i.gyazo.com/5b3c7f617ed14ea430a8cbc66283df25.gif)](https://gyazo.com/5b3c7f617ed14ea430a8cbc66283df25)
+- コメント機能
+[![Image from Gyazo](https://i.gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c.jpg)](https://gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c)
 
 # 実装予定の内容
-- 投稿に対して、「良いね」機能をつけたいです。「良いね」登録をすることで気になった投稿をいつでも確認できるようにマイページに「良いね」欄を作成したいと思ってます。
+投稿に対して、「良いね」機能をつけたいです。
+「良いね」登録をすることで気になった投稿をいつでも確認できるようにマイページに「良いね」欄を作成したいと思ってます。
 
 # DB設計
 
