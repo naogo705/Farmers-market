@@ -39,8 +39,10 @@ Farmers-market
 # DEMO
 - トップページ
 [![Image from Gyazo](https://i.gyazo.com/2b279d64a35ba3c59c2152a3a1bbee89.jpg)](https://gyazo.com/2b279d64a35ba3c59c2152a3a1bbee89)
-- 投稿機能
-[![Image from Gyazo](https://i.gyazo.com/5b3c7f617ed14ea430a8cbc66283df25.gif)](https://gyazo.com/5b3c7f617ed14ea430a8cbc66283df25)
+- 投稿画面と完了ページ
+[![Image from Gyazo](https://i.gyazo.com/b3eb7f1f4757ffa5c6edd7edd6a59fdd.jpg)](https://gyazo.com/b3eb7f1f4757ffa5c6edd7edd6a59fdd)
+[![Image from Gyazo](https://i.gyazo.com/25cba7f5ef8e7f5ac53389b1417a02db.jpg)](https://gyazo.com/25cba7f5ef8e7f5ac53389b1417a02db)
+
 - コメント機能
 [![Image from Gyazo](https://i.gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c.jpg)](https://gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c)
 
