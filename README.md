@@ -25,6 +25,8 @@ Things you may want to cover:
 
 # アプリ名
 Farmers-market
+- トップページ
+[![Image from Gyazo](https://i.gyazo.com/1c3cfce6a09df8c9d8b1fc86b63b9a88.jpg)](https://gyazo.com/1c3cfce6a09df8c9d8b1fc86b63b9a88)
 
 # 概要
 - ユーザー登録ができます。
@@ -34,17 +36,15 @@ Farmers-market
 - ログイン状態の場合は各投稿にコメントができます。
 
 # 制作背景
-私の両親は農業をしており、育てた農作物は地元のお客様からご愛顧いただき、たくさんのお言葉を頂いております。その中でも多くのお言葉として頂くのが次はいつ収穫されますかというご質問です。そこで私は農家の方が気軽に投稿できるアプリを開発しようと考えました。投稿内容にコメントができるようにすることで、今まで農家の方に直接お聞きしていたのが簡単にご質問が可能になります。これによりお互いのコミュニケーションも取りやすくなり、お客様もお買い物がしやすくなると考えたことが制作背景です。
+私の両親は農業をしており、育てた農作物は地元のお客様からご愛顧いただき、たくさんのお言葉をいただいております。その中でも多くのお言葉としていただくのが「次はいつ収穫されますか？」というご質問です。そこで私は農家の方が気軽に投稿できるアプリを開発しようと考えました。基本、文字は英語を使用せずボタンの種類も少なくしております。各ボタンは大きく表示することで誰でも見やすく使いやすいを重視しております。投稿内容にコメントができるようにすることで、今まで農家の方に直接お聞きしていたのが簡単にご質問が可能になります。これによりお互いのコミュニケーションも取りやすくなり、お客様もお買い物がしやすくなると考えたことが制作背景です。
 
 # DEMO
-- トップページ
-[![Image from Gyazo](https://i.gyazo.com/2b279d64a35ba3c59c2152a3a1bbee89.jpg)](https://gyazo.com/2b279d64a35ba3c59c2152a3a1bbee89)
 - 投稿画面と完了ページ
-[![Image from Gyazo](https://i.gyazo.com/b3eb7f1f4757ffa5c6edd7edd6a59fdd.jpg)](https://gyazo.com/b3eb7f1f4757ffa5c6edd7edd6a59fdd)
-[![Image from Gyazo](https://i.gyazo.com/25cba7f5ef8e7f5ac53389b1417a02db.jpg)](https://gyazo.com/25cba7f5ef8e7f5ac53389b1417a02db)
+[![Image from Gyazo](https://i.gyazo.com/d6b52fd46b484fcbfec9846b5a1d078f.png)](https://gyazo.com/d6b52fd46b484fcbfec9846b5a1d078f)
+[![Image from Gyazo](https://i.gyazo.com/e1fca9d476013f03d39e999f0de577bd.png)](https://gyazo.com/e1fca9d476013f03d39e999f0de577bd)
 
 - コメント機能
-[![Image from Gyazo](https://i.gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c.jpg)](https://gyazo.com/8e9a22b4e8e31c4d8e33337624ee220c)
+[![Image from Gyazo](https://i.gyazo.com/1f61475bd26077bfe1cbf96640de053a.jpg)](https://gyazo.com/1f61475bd26077bfe1cbf96640de053a)
 
 # 実装予定の内容
 投稿に対して、「良いね」機能をつけたいです。
