@@ -26,25 +26,28 @@ Things you may want to cover:
 # アプリ名
 Farmers-market
 - トップページ
-[![Image from Gyazo](https://i.gyazo.com/1c3cfce6a09df8c9d8b1fc86b63b9a88.jpg)](https://gyazo.com/1c3cfce6a09df8c9d8b1fc86b63b9a88)
+[![Image from Gyazo](https://i.gyazo.com/2afb24488ff910d1ba9a62d41af93582.jpg)](https://gyazo.com/2afb24488ff910d1ba9a62d41af93582)
 
 # 概要
-- ユーザー登録ができます。
+- ユーザー登録が可能です。
 - 登録者は画像と投稿文を載せた投稿ができます。
 - 投稿者は投稿に対して編集、削除ができます。
 - 投稿はログアウト状態でも閲覧可能です。
 - ログイン状態の場合は各投稿にコメントができます。
 
 # 制作背景
-私の両親は農業をしており、育てた農作物は地元のお客様からご愛顧いただき、たくさんのお言葉をいただいております。その中でも多くのお言葉としていただくのが「次はいつ収穫されますか？」というご質問です。そこで私は農家の方が気軽に投稿できるアプリを開発しようと考えました。基本、文字は英語を使用せずボタンの種類も少なくしております。各ボタンは大きく表示することで誰でも見やすく使いやすいを重視しております。投稿内容にコメントができるようにすることで、今まで農家の方に直接お聞きしていたのが簡単にご質問が可能になります。これによりお互いのコミュニケーションも取りやすくなり、お客様もお買い物がしやすくなると考えたことが制作背景です。
+私の両親は農業をしており、育てた農作物は地元のお客様からご愛顧いただき、たくさんのお言葉を頂いております。その中でも多くのお言葉として頂くのが次はいつ収穫されますかというご質問です。そこで私は農家の方が気軽に投稿できるアプリを開発しようと考えました。投稿内容にコメントができるようにすることで、今まで農家の方に直接お聞きしていたのが簡単にご質問が可能になります。これによりお互いのコミュニケーションも取りやすくなり、お客様もお買い物がしやすくなると考えたことが制作背景です。
+
+# 工夫した点
+農家には高齢者の方もいらっしゃいますので、基本、文字は英語を使用せずボタンの種類も少なくしております。各フォントやボタンを大きく表示することでどなたでも見やすく使いやすいを重視しております。
 
 # DEMO
 - 投稿画面と完了ページ
-[![Image from Gyazo](https://i.gyazo.com/d6b52fd46b484fcbfec9846b5a1d078f.png)](https://gyazo.com/d6b52fd46b484fcbfec9846b5a1d078f)
-[![Image from Gyazo](https://i.gyazo.com/e1fca9d476013f03d39e999f0de577bd.png)](https://gyazo.com/e1fca9d476013f03d39e999f0de577bd)
+[![Image from Gyazo](https://i.gyazo.com/ed87c9cbedf7fc69fc4c926116ce413f.png)](https://gyazo.com/ed87c9cbedf7fc69fc4c926116ce413f)
+[![Image from Gyazo](https://i.gyazo.com/ec740d8b4624d6f0b40fce02e80f8cd2.png)](https://gyazo.com/ec740d8b4624d6f0b40fce02e80f8cd2)
 
 - コメント機能
-[![Image from Gyazo](https://i.gyazo.com/1f61475bd26077bfe1cbf96640de053a.jpg)](https://gyazo.com/1f61475bd26077bfe1cbf96640de053a)
+[![Image from Gyazo](https://i.gyazo.com/b4a7b0e7da31fac6f8a6fc03b6126c6f.jpg)](https://gyazo.com/b4a7b0e7da31fac6f8a6fc03b6126c6f)
 
 # 実装予定の内容
 投稿に対して、「良いね」機能をつけたいです。

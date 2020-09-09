@@ -58,3 +58,5 @@ gem 'pry-rails'
 gem 'devise'
 
 gem 'font-awesome-sass'
+
+gem 'jquery-rails'
