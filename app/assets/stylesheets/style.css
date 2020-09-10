@@ -339,7 +339,7 @@ form input[type="submit"]:active {
 .favorite{
   border: 2px solid black;
   border-radius: 100px;
-  background-color: lightgray;
+  background-color: lightblue;
   text-align: center;
   line-height: 50px;
   width: 170px;
