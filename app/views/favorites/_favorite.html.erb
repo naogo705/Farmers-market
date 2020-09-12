@@ -1,0 +1,13 @@
+<% if user_signed_in? %>
+  <% if Favorite.find_by(user_id: current_user.id, tweet_id: @tweet.id) %>
+    <div class="favoriteBtn">
+    お気に入り★
+    </div>
+  <% else %>
+    <div class="nonFavoriteBtn">
+    お気に入り⭐️
+    </div>
+<% else %>
+  <div class="logout">
+  お気に入り★
+  </div>
