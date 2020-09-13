@@ -23,6 +23,6 @@
         </a>
       </span>
       <div class="favorite">
-      お気に入り★
+      <%= render partial: "favorites/favorite", locals: {tweet: @tweet} %>
       </div>
     </div>
