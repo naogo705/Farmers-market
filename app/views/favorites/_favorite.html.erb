@@ -1,15 +1,15 @@
 <% if user_signed_in? %>
-  <%# <% if Favorite.find_by(user_id: current_user.id, tweet_id: @tweet.id) %> 
+  <% if Favorite.find_by(user_id: current_user.id) %>
     <div class="favoriteBtn">
     良いね★
     </div>
   <% else %>
     <div class="nonFavoriteBtn"> 
-    良いね⭐️
+    良いね⭐
     </div>
-  <%# <% end %> 
-<%# <% else %> 
-  <%# <div class="logout"> 
+  <% end %>
+<% else %>
+  <div class="logout"> 
   良いね★
-  </div>  %>
+  </div> 
 <% end %>
