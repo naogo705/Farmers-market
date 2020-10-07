@@ -3,7 +3,11 @@ class FavoritesController < ApplicationController
   
   def create
     @favorite = Favorite.new(user_id: current_user.id, tweet_id: params[:tweet_id])
-    @favorite.save
+    if @favorite.save
+      redirect_to edit_tweet_path(@tweet.id)
+    else
+      render :new
+    end
   end
 
   def destroy
