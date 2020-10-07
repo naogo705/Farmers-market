@@ -1,15 +1,15 @@
-<% if user_signed_in? %>
-  <% if Favorite.find_by(user_id: current_user.id) %>
+<%# <% if user_signed_in? %> 
+  <%# <% if Favorite.find_by(user_id: current_user.id) %> 
     <div class="favoriteBtn">
-    良いね★
+      <%= link_to "良いね", method: :post %>
     </div>
-  <% else %>
-    <div class="nonFavoriteBtn"> 
-    良いね⭐
-    </div>
-  <% end %>
-<% else %>
-  <div class="logout"> 
-  良いね★
-  </div> 
-<% end %>
+  <%# <% else %>
+    <%# <div class="nonFavoriteBtn">  %>
+    <%# 良いね⭐ %>
+    <%# </div> %>
+  <%# <% end %> 
+<%# <% else %> 
+  <%# <div class="logout">  %>
+  <%# ログインしてね %>
+  <%# </div>  %>
+<%# <% end %> 
