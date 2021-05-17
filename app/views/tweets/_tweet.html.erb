@@ -3,18 +3,15 @@
           <div class="content-post" style="background-image: url(<%= tweet.image %>);">
             <div class="front">
               <div class="inner">
-                <div class="inner-main">
-                  <a href="/users/<%= tweet.user.id %>" class="inner-userName">
-                  <%= tweet.user.nickname %>
-                  </a>
-                </div>
+                <a href="/users/<%= tweet.user.id %>" class="inner-userName">
+                <%= tweet.user.nickname %>
+                </a>
+                <p class="inner-txt"><%= tweet.text %></p>
               </div>
             </div>
             <div class="back">
               <div class="inner">
                 <div class="inner-hoverBox">
-                  <p class="inner-postDate"><%= tweet.updated_at.strftime('%y年%m月%d日') %></p>
-                  <p class="inner-txt"><%= tweet.text %></p>
                   <div class="showBtn">
                     <%= link_to '詳しく見る', tweet_path(tweet.id), method: :get %>
                   </div>

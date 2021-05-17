@@ -4,8 +4,9 @@
 }
 
 html,body{
-  height: 100vh;
-  /* background-image: url("nougyou.jpg"); */
+  background-image: url("farm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1,h2,h3,h4,h5,h6,body{
@@ -104,6 +105,7 @@ footer a{
   margin-top: 100px;
   margin-bottom: 0;
   max-width: 760px;
+  overflow: scroll;
 }
 
 .contents-ttl {
@@ -114,17 +116,6 @@ footer a{
   align-items: center;
   font-family: 'Montserrat';
 }
-
-/* .contents-ttl:before {
-  display: inline-block;
-  content:"";
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-  background-image: url("tomato.png");
-  background-size: contain;
-  vertical-align: middle;
-} */
 
 
 .nickname{
@@ -141,7 +132,6 @@ footer a{
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  box-shadow: 0 3px #262626;
   border-radius: 10px;
 }
 
@@ -159,7 +149,7 @@ footer a{
 
 
 .container{
-  background-color: white;
+  background-color: #fff;
   margin: 165px 0;
   padding: 30px;
 }
@@ -396,7 +386,6 @@ form input[type="submit"]:active {
 .front,
 .back{
   background-size: cover;
-  box-shadow:0 3px #262626;
   border-radius: 10px;
   background-position: center;
   transition: 0.5s;
@@ -430,13 +419,20 @@ form input[type="submit"]:active {
   font-weight: 600;
 }
 
-.inner-main {
-  display: flex;
+.inner-userName {
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  width: 580px;
+  justify-content: center; */
+  /* width: 580px; */
   position: absolute;
-  top: 60px;
+  top: 50px;
+  left: 70px;
+  z-index: 2;
+}
+
+.inner-txt {
+  position: absolute;
+  top: 100px;
   left: 70px;
   z-index: 2;
 }
@@ -451,8 +447,8 @@ form input[type="submit"]:active {
 }
 
 .showBtn {
-  padding: 6px 20px;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 20px;
   color: #fff;
   border: 2px solid #fff;
   text-align: center;
