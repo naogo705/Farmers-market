@@ -1,28 +1,23 @@
-    <div class="content-post" style="background-image: url(<%= tweet.image %>);">
-      <div class="drop">
-        <span class="drop-span"><%= image_tag 'arrow_top.png', class: "drop-btn" %>
-          <ul class="drop-list">
-            <li>
-              <%= link_to 'コメント', tweet_path(tweet.id), method: :get %>
-            </li>
-            <% if user_signed_in? && current_user.id == tweet.user.id %>
-              <li>
-                <%= link_to '編集', edit_tweet_path(tweet.id), method: :get %>
-              </li>
-              <li>
-                <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
-              </li>
-            <% end %>
-          </ul>
-        </span>
+      <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="content-post" style="background-image: url(<%= tweet.image %>);">
+            <div class="front">
+              <div class="inner">
+                <a href="/users/<%= tweet.user.id %>" class="inner-userName">
+                <%= tweet.user.nickname %>
+                </a>
+                <p class="inner-txt"><%= tweet.text %></p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <div class="inner-hoverBox">
+                  <div class="showBtn">
+                    <%= link_to '詳しく見る', tweet_path(tweet.id), method: :get %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p><%= tweet.text %></p>
-      <span class="name">
-        <a href="/users/<%= tweet.user.id %>">
-        <%= tweet.user.nickname %>
-        </a>
-      </span>
-      <div class="favorite">
-      <%= render partial: "favorites/favorite", locals: {tweet: @tweet} %>
-      </div>
-    </div>
