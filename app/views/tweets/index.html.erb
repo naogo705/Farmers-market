@@ -1,5 +1,4 @@
 <div class="contents row">
-  <h1 class="contents-ttl">みんなの投稿</h1>
   <% @tweets.each do |tweet| %>
   <%= render partial: "tweet", locals: {tweet: tweet} %>
   <% end %>

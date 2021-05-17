@@ -115,7 +115,7 @@ footer a{
   font-family: 'Montserrat';
 }
 
-.contents-ttl:before {
+/* .contents-ttl:before {
   display: inline-block;
   content:"";
   width: 30px;
@@ -124,7 +124,7 @@ footer a{
   background-image: url("tomato.png");
   background-size: contain;
   vertical-align: middle;
-}
+} */
 
 
 .nickname{
@@ -418,27 +418,26 @@ form input[type="submit"]:active {
   border: solid 1px;
 }
 
-/* .inner {
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-          transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 5rem;
-  z-index: 2;
-} */
-
-.inner-userName, .inner-postDate {
+.inner-userName {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
+.inner-postDate {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 .inner-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 580px;
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 60px;
+  left: 70px;
   z-index: 2;
 }
 
