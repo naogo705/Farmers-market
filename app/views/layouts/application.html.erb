@@ -10,19 +10,19 @@
 
   <body>
     <header class="header">
-      <div class="header-left">
-        <p class="header-logo"><a href="/">Farmers-market</a></p>
+      <div class="header-box">
+        <div class="header-logo"><a href="/">Farmers-market</a></div>
         <% if user_signed_in? %>
+          <div class="user-name">
+            <div>こんにちは、 <%= current_user.nickname %> さん！</div>
+            <ul class="user-info">
+              <li class="info-list">
+                <%= link_to "マイページ", "/users/#{current_user.id}" %>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              </li>
+            </ul>
+          </div>
           <div class="header-right">
-            <div class="user-name">
-            <span>こんにちは、 <%= current_user.nickname %> さん！</span>
-              <ul class="user-info">
-                <li class="info-list">
-                  <%= link_to "マイページ", "/users/#{current_user.id}" %>
-                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-                </li>
-              </ul>
-            </div>
             <%= link_to "投稿する", new_tweet_path, class: "post" %>
           </div>
         <% else %>

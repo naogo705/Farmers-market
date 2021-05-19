@@ -25,21 +25,24 @@
     <div class="comments">
     <% if current_user %>
       <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
+        <%= form.text_area :text, placeholder: "コメントを入力する", rows: "2" %>
+        <%= form.submit "コメントを送る" %>
       <% end %>
     <% else %>
       <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
       </strong>
     <% end %>
     <div class="comments-area">
-      <h3 class="comments-title">ーーーーー🟢コメント一覧🟢ーーーーー</h3>
+      <h3 class="comments-title"><span class="comments-title-bar">コメント一覧</span></h3>
         <% if @comments %>
           <% @comments.each do |comment| %>
-            <p class="comments-txt">
-              <strong><%= comment.user.nickname %>：</strong>
-              <%= comment.text %>
-            </p>
+            <div class="comments-txtBox">
+              <div class="comments-txtArea">
+                <p class="comments-txt"><%= comment.user.nickname %></p>
+                <p class="comments-txt"><%= comment.text %></p>
+              </div>
+              <p class="comment-day"><%= comment.updated_at.strftime("%m月%d日%H:%M") %></p>
+            </div>
           <% end %>
         <% end %>
     </div>
