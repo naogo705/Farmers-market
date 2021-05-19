@@ -2,7 +2,7 @@
     <div class="show-content-post" style="background-image: url(<%= @tweet.image %>);">
       <% if user_signed_in? && current_user.id == @tweet.user.id %>
         <div class="drop">
-          <span class="drop-span"><%= image_tag 'arrow_top.png', class: "drop-btn" %>
+          <span class="drop-span"><%= image_tag 'icons8-した-50.png', class: "drop-btn drop-btn-show" %>
             <ul class="drop-list">
               <li>
                 <%= link_to '編集', edit_tweet_path(@tweet.id), method: :get %>
@@ -14,7 +14,7 @@
           </span>
         </div>
       <% end %>
-      <p><%= @tweet.text %></p>
+      <p class="tweet-txt-show"><%= @tweet.text %></p>
       <span class="name">
         <a href="/users/<%= @tweet.user.id %>">
         <%= @tweet.user.nickname %>
@@ -36,7 +36,7 @@
       <h3 class="comments-title">ーーーーー🟢コメント一覧🟢ーーーーー</h3>
         <% if @comments %>
           <% @comments.each do |comment| %>
-            <p>
+            <p class="comments-txt">
               <strong><%= comment.user.nickname %>：</strong>
               <%= comment.text %>
             </p>

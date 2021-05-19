@@ -206,8 +206,18 @@ form input,form textarea{
 }
 
 .drop-btn{
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
+}
+
+.drop-btn-show {
+  position: absolute;
+  right: 0;
+}
+
+.drop-position {
+  position: absolute;
+  top: 20px;
 }
 
 .drop{
@@ -224,8 +234,13 @@ form input,form textarea{
   width: 90px;
   background-color: olive;
   display: none;
-  border: 1px solid #ddd;
+  border-top: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
   position: absolute;
+  top: 42px;
+  right: -25px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -233,9 +248,15 @@ li {
   text-align: center;
 }
 
+.drop-listPosition {
+  position: absolute;
+  top: 62px;
+  left: 10px;
+}
+
 .drop-span{
   display: block;
-  width: 20px;
+  width: 70px;
   cursor: pointer;
 }
 
@@ -248,13 +269,6 @@ li {
   color: #fff;
   font-size: 15px;
   border-bottom: 1px solid #fff;
-}
-
-.drop-list{
-  border-top: 2px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
 }
 
 .drop-list li:hover{
@@ -348,6 +362,10 @@ form input[type="submit"]:active {
   font-weight: bold;
   text-align: center;
   margin: 10px 0;
+}
+
+.comments-txt {
+  color: #262626;
 }
 
 .favorite{
@@ -461,4 +479,8 @@ form input[type="submit"]:active {
   box-shadow: none;
   position: relative;
   top: 5px;
+}
+
+.tweet-txt-show {
+  width: 350px;
 }
