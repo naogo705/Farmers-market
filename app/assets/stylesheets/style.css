@@ -59,19 +59,19 @@ header, p, a, span, .post  {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
 }
 
-.header-left{
-  position: relative;
+.header-box {
+  width: 1080px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo{
-  padding-left: 30px;
   font-weight: 100px;
   line-height: 41px;
   color: #fff;
 }
-
 
 body{
   padding-top: 60px;
@@ -94,7 +94,9 @@ footer a{
 
 .row2{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .row{
@@ -137,14 +139,15 @@ footer a{
 
 .show-content-post{
   background-size: cover;
-  margin: 30px 0;
+  margin: 55px 0 0;
   padding: 30px;
-  height: 500px;
+  height: 450px;
   width: 500px;
   position: relative;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 
@@ -206,8 +209,18 @@ form input,form textarea{
 }
 
 .drop-btn{
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
+}
+
+.drop-btn-show {
+  position: absolute;
+  right: 0;
+}
+
+.drop-position {
+  position: absolute;
+  top: 20px;
 }
 
 .drop{
@@ -224,8 +237,13 @@ form input,form textarea{
   width: 90px;
   background-color: olive;
   display: none;
-  border: 1px solid #ddd;
+  border-top: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
   position: absolute;
+  top: 42px;
+  right: -25px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -233,9 +251,15 @@ li {
   text-align: center;
 }
 
+.drop-listPosition {
+  position: absolute;
+  top: 62px;
+  left: 10px;
+}
+
 .drop-span{
   display: block;
-  width: 20px;
+  width: 70px;
   cursor: pointer;
 }
 
@@ -248,13 +272,6 @@ li {
   color: #fff;
   font-size: 15px;
   border-bottom: 1px solid #fff;
-}
-
-.drop-list{
-  border-top: 2px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
 }
 
 .drop-list li:hover{
@@ -300,19 +317,20 @@ form input[type="submit"]:active {
 }
 
 .user-name{
-  position: absolute;
-  left: 600px;
-  top: 5px;
   color: #fff;
   font-weight: bold;
   display: block;
   cursor: pointer;
+  position: relative;
 }
 
 .user-info{
   display: none;
   list-style: none;
-
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
 }
 
 .user-name:hover .user-info{
@@ -336,18 +354,62 @@ form input[type="submit"]:active {
 }
 
 .comments{
-  background-color: #fff;
-  padding: 20px;
-  margin: 30px 0;
+  margin: 50px 0;
   height: 500px;
   width: 500px;
   overflow: scroll;
 }
 
-.comments-title{
-  font-weight: bold;
+.comments-area {
+  background-color: #fff;
+  width: 100%;
+  height: 255px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.comments-title {
+  position: relative;
+  font-size: 15px;
+  font-weight: normal;
   text-align: center;
   margin: 10px 0;
+  padding: 0 65px;
+}
+
+.comments-title:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: olive;
+}
+
+.comments-title-bar {
+  color: #444;
+  position: relative;
+  padding: 0 1em;
+  background: #fff;
+}
+
+.comments-txtBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.comments-txt {
+  color: #262626;
+}
+
+.comment-day {
+  color: #444;
+  font-size: 10px;
+  text-align: right;
 }
 
 .favorite{
@@ -419,10 +481,6 @@ form input[type="submit"]:active {
 }
 
 .inner-userName {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* width: 580px; */
   position: absolute;
   top: 50px;
   left: 70px;
@@ -461,4 +519,8 @@ form input[type="submit"]:active {
   box-shadow: none;
   position: relative;
   top: 5px;
+}
+
+.tweet-txt-show {
+  width: 350px;
 }

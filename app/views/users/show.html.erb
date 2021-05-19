@@ -1,22 +1,28 @@
-<div class="contents row row1">
+<div class="contents row">
   <p class="nickname"><%= @nickname %>さんの投稿一覧</p>
   <% @tweets.each do |tweet| %>
-    <div class="content-post" style="background-image: url(<%= tweet.image %>);">
-      <% if user_signed_in? && current_user.id == tweet.user.id %>
-        <div class="drop">
-          <span class="drop-span"><%= image_tag 'arrow_top.png', class: "drop-btn" %>
-            <ul class="drop-list">
-                <li>
-                  <%= link_to '編集', edit_tweet_path(tweet.id), method: :get %>
-                </li>
-                <li>
-                  <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
-                </li>
-            </ul>
-          </span>
+    <div class="cols">
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="content-post" style="background-image: url(<%= tweet.image %>);">
+          <div class="front">
+            <div class="inner">
+              <a href="/users/<%= tweet.user.id %>" class="inner-userName">
+              <%= tweet.user.nickname %>
+              </a>
+              <p class="inner-txt"><%= tweet.text %></p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="inner-hoverBox">
+                <div class="showBtn">
+                  <%= link_to '詳しく見る', tweet_path(tweet.id), method: :get %>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      <% end %>
-      <p><%= tweet.text %></p>
+      </div>
     </div>
   <% end %>
 </div>

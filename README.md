@@ -26,7 +26,7 @@ Things you may want to cover:
 # アプリ名
 Farmers-market
 - トップページ
-[![Image from Gyazo](https://i.gyazo.com/2afb24488ff910d1ba9a62d41af93582.jpg)](https://gyazo.com/2afb24488ff910d1ba9a62d41af93582)
+[![Image from Gyazo](https://i.gyazo.com/a6b0c0e396bbfbc9381bc86be17d4545.jpg)](https://gyazo.com/a6b0c0e396bbfbc9381bc86be17d4545)
 
 # 概要
 - ユーザー登録が可能です。
@@ -43,11 +43,11 @@ Farmers-market
 
 # DEMO
 - 投稿画面と完了ページ
-[![Image from Gyazo](https://i.gyazo.com/ed87c9cbedf7fc69fc4c926116ce413f.png)](https://gyazo.com/ed87c9cbedf7fc69fc4c926116ce413f)
-[![Image from Gyazo](https://i.gyazo.com/ec740d8b4624d6f0b40fce02e80f8cd2.png)](https://gyazo.com/ec740d8b4624d6f0b40fce02e80f8cd2)
+[![Image from Gyazo](https://i.gyazo.com/fff6e0d04084a047494001a6385d78ca.jpg)](https://gyazo.com/fff6e0d04084a047494001a6385d78ca)
+[![Image from Gyazo](https://i.gyazo.com/341ed7fdd2fd50e8057a1e07cd50d0ce.jpg)](https://gyazo.com/341ed7fdd2fd50e8057a1e07cd50d0ce)
 
 - コメント機能
-[![Image from Gyazo](https://i.gyazo.com/b4a7b0e7da31fac6f8a6fc03b6126c6f.jpg)](https://gyazo.com/b4a7b0e7da31fac6f8a6fc03b6126c6f)
+[![Image from Gyazo](https://i.gyazo.com/c0f849100206e46263121f288bca8a07.jpg)](https://gyazo.com/c0f849100206e46263121f288bca8a07)
 
 # 実装予定の内容
 投稿に対して、「良いね」機能をつけたいです。
