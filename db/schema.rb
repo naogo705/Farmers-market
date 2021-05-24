@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2020_08_15_143206) do
 
-  create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "comments", force: :cascade do |t|
     t.integer "user_id"
     t.integer "tweet_id"
     t.text "text"
@@ -20,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_08_15_143206) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "favorites", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "tweet_id"
     t.datetime "created_at", precision: 6, null: false
@@ -29,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_08_15_143206) do
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
-  create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "tweets", force: :cascade do |t|
     t.string "text"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
@@ -37,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_08_15_143206) do
     t.integer "user_id"
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

@@ -1,0 +1,28 @@
+<div class="contents row">
+  <p class="nickname"><%= @nickname %>さんの投稿一覧</p>
+  <% @tweets.each do |tweet| %>
+    <div class="cols">
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="content-post" style="background-image: url(<%= tweet.image %>);">
+          <div class="front">
+            <div class="inner">
+              <a href="/users/<%= tweet.user.id %>" class="inner-userName">
+              <%= tweet.user.nickname %>
+              </a>
+              <p class="inner-txt"><%= tweet.text %></p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="inner-hoverBox">
+                <div class="showBtn">
+                  <%= link_to '詳しく見る', tweet_path(tweet.id), method: :get %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

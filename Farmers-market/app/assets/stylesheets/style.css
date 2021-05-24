@@ -1,0 +1,526 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  background-image: url("farm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,h2,h3,h4,h5,h6,body{
+  letter-spacing: 0.3em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+header, p, a, span, .post  {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+
+.post {
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 5px #fff;
+}
+
+.post:active{
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.header {
+  font-size: 20px;
+  padding: 15px 0 10px;
+  background-color: olive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 70px;
+  font-family: 'Montserrat';
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
+
+.header-box {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo{
+  font-weight: 100px;
+  line-height: 41px;
+  color: #fff;
+}
+
+body{
+  padding-top: 60px;
+}
+
+footer {
+  margin: 30px auto;
+  padding: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a{
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.row2{
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.row{
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  max-width: 760px;
+  overflow: scroll;
+}
+
+.row1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  max-width: 760px;
+}
+
+.nickname{
+  color: #262626;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.content-post{
+  background-size: cover;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  border-radius: 10px;
+}
+
+.show-content-post{
+  background-size: cover;
+  margin: 55px 0 0;
+  padding: 30px;
+  height: 450px;
+  width: 500px;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+
+.container{
+  background-color: #fff;
+  padding: 30px;
+}
+
+.container h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container-title{
+  font-size: 25px;
+  font-weight: bold;
+  color: olive;
+  text-align: center;
+}
+
+form input,form textarea{
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.submit-btn{
+  cursor: pointer;
+  background-color: olive;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 5px lightgray;
+}
+
+.success{
+  height: 100px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.success h3{
+  font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.submit-btn:active{
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.drop-btn{
+  width: 40px;
+  height: 40px;
+}
+
+.drop-btn-show {
+  position: absolute;
+  right: 0;
+}
+
+.drop-position {
+  position: absolute;
+  top: 20px;
+}
+
+.drop{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+  height: 100px;
+  width: 80px;
+}
+
+.drop-list{
+  list-style: none;
+  width: 90px;
+  background-color: olive;
+  display: none;
+  border-top: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: 42px;
+  right: -25px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  text-align: center;
+}
+
+.drop-listPosition {
+  position: absolute;
+  top: 62px;
+  left: 10px;
+}
+
+.drop-span{
+  display: block;
+  width: 70px;
+  cursor: pointer;
+}
+
+.drop-span:hover .drop-list{
+  display: block;
+}
+
+.drop-list a{
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.drop-list li:hover{
+  background-color: lightskyblue;
+}
+
+.submit-tanu{
+  height: 100px;
+  width: 100%;
+  background-color: olive;
+  padding: 6px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  /* box-shadow:0 5px lightgray; */
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  cursor: pointer;
+  height: 80px;
+  width: 100%;
+  background-color: olive;
+  padding: 6px 20px;
+  font-size: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 8px lightgray;
+}
+
+form input[type="submit"]:active {
+  box-shadow: none;
+  position: relative;
+  top: 8px;
+}
+
+.user-name{
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-info{
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+}
+
+.user-name:hover .user-info{
+  display: block;
+}
+
+.info-list{
+  margin-top: 10px;
+  border-bottom: 1px solid #fff;
+  background-color: olive;
+}
+
+.info-list a {
+  font-size: 16px;
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.comments{
+  margin: 50px 0;
+  height: 500px;
+  width: 500px;
+  overflow: scroll;
+}
+
+.comments-area {
+  background-color: #fff;
+  width: 100%;
+  height: 255px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.comments-title {
+  position: relative;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0 65px;
+}
+
+.comments-title:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: olive;
+}
+
+.comments-title-bar {
+  color: #444;
+  position: relative;
+  padding: 0 1em;
+  background: #fff;
+}
+
+.comments-txtBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.comments-txt {
+  color: #262626;
+}
+
+.comment-day {
+  color: #444;
+  font-size: 10px;
+  text-align: right;
+}
+
+.favorite{
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  top: 330px;
+  color: black;
+  cursor: pointer;
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: 100%;
+  height: 350px;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+.front,
+.back{
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  transition: 0.5s;
+  text-align: center;
+  min-height: 280px;
+  height: 350px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.back{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #262626;
+  background-color: rgba(0,0,0,0.65);
+  border: solid 1px;
+}
+
+.inner-userName {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.inner-postDate {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.inner-userName {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  z-index: 2;
+}
+
+.inner-txt {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  z-index: 2;
+}
+
+.inner-hoverBox {
+  width: 500px;
+  margin: 150px auto 100px;
+}
+
+.content-post:hover .back {
+  opacity: 1;
+}
+
+.showBtn {
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow:0 5px #fff;
+  margin-top: 30px;
+}
+
+.showBtn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+.tweet-txt-show {
+  width: 350px;
+}

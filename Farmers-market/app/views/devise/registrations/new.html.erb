@@ -1,0 +1,36 @@
+<div class ="contents row">
+  <div class="container">
+<h2>新規登録</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="submit-tanu">
+    <%= f.label :名前を入力する %><em>(最大6文字まで設定できます）</em><br />
+    <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
+  </div>
+
+  <div class="submit-tanu">
+    <%= f.label :Eメールアドレスを入力する %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="submit-tanu">
+    <%= f.label :パスワードを設定する %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> 文字以上で設定が必要)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="submit-tanu">
+    <%= f.label :確認用でもう１回パスワードを入力する %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "登録ボタン" %>
+  </div>
+<% end %>
+</div>
+</div>
