@@ -41,7 +41,7 @@
                 <p class="comments-txt"><%= comment.user.nickname %></p>
                 <p class="comments-txt"><%= comment.text %></p>
               </div>
-              <p class="comment-day"><%= comment.updated_at.strftime("%m月%d日%H:%M") %></p>
+              <p class="comment-day"><%= comment.created_at.strftime("%m月%d日") %></p>
             </div>
           <% end %>
         <% end %>
